@@ -1,0 +1,80 @@
+body
+{
+	background-color: #E7F7F6;
+}
+
+form
+{
+	padding-top: 9%;
+}
+
+input
+{
+	display: block;
+	width: 70%;
+	height: 35px;
+	margin: auto;
+	padding-left: 10px;
+	font-size: 120%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+input, select, textarea
+{
+    color: #AA496F;
+}
+
+textarea:focus, input:focus
+{
+    color: #AA496F;
+}
+
+img
+{
+	display: block;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#login_div
+{
+	width: 600px;
+	height: 250px;
+	background-color: #585657;
+	text-color: #875E71;
+	margin: auto;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+#login_button
+{
+	display: block;
+	margin: auto;
+	width: 150px;
+	height: 38px;
+	text-color: #AA496F;
+	text-decoration: none;
+	text-align: center;
+	font-size: 120%;
+	line-height: 38px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+a:link, a:active, a:visited
+{
+	font-family: sans-serif;
+	background-color: #FEFFFF;
+	color: #AA496F;
+}
+
+a:active
+{
+	background-color: silver;
+}
