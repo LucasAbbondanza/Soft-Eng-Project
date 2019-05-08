@@ -5,30 +5,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="lib/onsen/css/onsenui.css" />
     <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <script src="lib/onsen/js/onsenui.js"></script>
 
     <title>Home</title>
-
-    <!--
-        <link href='fullcalendar/core/main.css' rel='stylesheet' />
-        <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
-        <script src='fullcalendar/core/main.js'></script>
-        <script src='fullcalendar/daygrid/main.js'></script>
-        
-        <script>
-
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-            plugins: [ 'dayGrid' ]
-            });
-
-            calendar.render();
-        });
-
-        </script>
-    -->
 </head>
 
 <body>
@@ -50,7 +30,6 @@
 
     <template id="home.html">
         <ons-page id = "home">
-            <img src="https://coolspringsfitness.com/wp-content/themes/coolsprings/img/cool-springs-fitness-logo.svg" alt="Cool Springs Fitness Logo">
             <ons-toolbar>
                 <div class="left">
                     <ons-toolbar-button onclick="fn.open()">
@@ -62,55 +41,41 @@
                 </div>
             </ons-toolbar>
 
-            <div id="sidebar">
-                    <form class="filter">
-                        Room:<br/>
-                        <select class="filter" id="room">
-                            <option value="no filter" class="placeholder">Please select a room type</option>
-                            <option value="racquetball court">Racquetball Court</option>
-                            <option value="mat room">Mat Room</option>
-                            <option value="pool">Pool</option>
-                            <option value="my reservations">My Reservations</option>
-                        </select><br/>
-                        Day:<br/>
-                        <select class="filter" id="weekday">
-                            <option value="no filter" class="placeholder">---No Filter---</option>
-                            <option value="sunday">Sunday</option>
-                            <option value="monday">Monday</option>
-                            <option value="tuesday">Tuesday</option>
-                            <option value="wednesday">Wednesday</option>
-                            <option value="thursday">Thursday</option>
-                            <option value="friday">Fridayday</option>
-                            <option value="saturday">Saturday</option>
-                        </select>
-                    </form>
-            </div>
-            <!--
-                <div id='calendar'>
-                    <style type="text/css">
-                        html, body {
-                            margin: 0;
-                            padding: 0;
-                            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-                            font-size: 14px;
-                        }
-
-                        #calendar {
-                            max-width: 900px;
-                            margin: 40px auto;
-                        }
-                    </style>
+            <div id="container">
+                    <div id="sidebar">
+                        <img id="logo" src="https://coolspringsfitness.com/wp-content/themes/coolsprings/img/cool-springs-fitness-logo.svg" alt="Cool Springs Fitness Logo">
+                        <form class="filter">
+                            Room:<br/>
+                            <select class="filter" id="room">
+                                <option value="no filter" class="placeholder">Please select a room type</option>
+                                <option value="racquetball court">Racquetball Court</option>
+                                <option value="mat room">Mat Room</option>
+                                <option value="pool">Pool</option>
+                                <option value="my reservations">My Reservations</option>
+                            </select><br/>
+                            Day:<br/>
+                            <select class="filter" id="weekday">
+                                <option value="no filter" class="placeholder">---No Filter---</option>
+                                <option value="sunday">Sunday</option>
+                                <option value="monday">Monday</option>
+                                <option value="tuesday">Tuesday</option>
+                                <option value="wednesday">Wednesday</option>
+                                <option value="thursday">Thursday</option>
+                                <option value="friday">Fridayday</option>
+                                <option value="saturday">Saturday</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div id="calendar">
+                        <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
+                        <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
+                        <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
+                        <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
+                        <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
+                        <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
+                        <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
+                    </div>
                 </div>
-            -->
-            <div id="calendar">
-                <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
-                <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
-                <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
-                <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
-                <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
-                <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
-                <img class="schedule" src="DaySchedule.png" alt="Your browser must support images.">
-            </div>
         </ons-page>
     </template>
 
